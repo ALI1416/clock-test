@@ -1,6 +1,6 @@
 package com.demo;
 
-import cn.z.Clock;
+import cn.z.clock.Clock;
 
 /**
  * <h1>高性能时钟测试</h1>
