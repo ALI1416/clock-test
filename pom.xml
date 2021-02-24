@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cn.404z</groupId>
+	<artifactId>clock-test</artifactId>
+	<version>0.0.1</version>
+	<packaging>jar</packaging>
+
+	<name>ClockTest</name>
+	<description>High performance clock test</description>
+	<url>https://github.com/ALI1416/clock-test</url>
+
+	<licenses>
+		<license>
+			<name>BSD License</name>
+			<url>https://opensource.org/licenses/BSD-3-Clause</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>ali</name>
+			<email>ali-k@foxmail.com</email>
+			<organization>404z.cn</organization>
+			<organizationUrl>http://404z.cn</organizationUrl>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>+8</timezone>
+		</developer>
+	</developers>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.deploy.skip>true</maven.deploy.skip>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>cn.404z</groupId>
+			<artifactId>clock</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+	</dependencies>
+
+</project>
