@@ -17,6 +17,7 @@ public class ClockTest {
     public static void main(String[] args) {
         test();
         compare100w();
+        compare1000w();
         compare1e();
         compare21e();
     }
@@ -34,9 +35,19 @@ public class ClockTest {
      */
     static void compare100w() {
         compare(1000000);
-        // 高性能时钟调用1000000次使用时间为：2毫秒
-        // 系统时钟调用1000000次使用时间为：10毫秒
-        // 调用1000000次，高性能时钟比系统时钟性能高2.0倍
+        // 高性能时钟调用1000000次使用时间为：1毫秒
+        // 系统时钟调用1000000次使用时间为：5毫秒
+        // 调用1000000次，高性能时钟比系统时钟性能高5.0倍
+    }
+
+    /**
+     * 1000万次高性能时钟与系统时钟比较
+     */
+    static void compare1000w() {
+        compare(10000000);
+        // 高性能时钟调用10000000次使用时间为：2毫秒
+        // 系统时钟调用10000000次使用时间为：22毫秒
+        // 调用10000000次，高性能时钟比系统时钟性能高11.0倍
     }
 
     /**
@@ -55,8 +66,8 @@ public class ClockTest {
     static void compare21e() {
         compare(Integer.MAX_VALUE);
         // 高性能时钟调用2147483647次使用时间为：35毫秒
-        // 系统时钟调用2147483647次使用时间为：6750毫秒
-        // 调用2147483647次，高性能时钟比系统时钟性能高192.85714285714286倍
+        // 系统时钟调用2147483647次使用时间为：6720毫秒
+        // 调用2147483647次，高性能时钟比系统时钟性能高192.0倍
     }
 
     /**
@@ -65,7 +76,7 @@ public class ClockTest {
      * @param count 次数
      */
     static void compare(int count) {
-        // 调用一次，并延时1秒，初始化高性能时钟
+        // 调用一次，并延时1秒，初始化
         Clock.now();
         try {
             Thread.sleep(1000);
