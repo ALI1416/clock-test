@@ -26,8 +26,12 @@ public class ClockTest {
      * 测试
      */
     static void test() {
-        System.out.println("现在时间戳：" + Clock.now());
-        // 现在时间戳：1614138897113
+        System.out.println(Clock.now());
+        System.out.println(Clock.date());
+        System.out.println(Clock.timestamp());
+        // 1614583563907
+        // Mon Mar 01 15:26:03 CST 2021
+        // 2021-03-01 15:26:03.973
     }
 
     /**
@@ -104,4 +108,5 @@ public class ClockTest {
 
         System.out.println("调用" + count + "次，高性能时钟比系统时钟性能高" + dc / (double) ba + "倍");
     }
+
 }
