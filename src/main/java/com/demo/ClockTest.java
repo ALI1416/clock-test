@@ -26,12 +26,12 @@ public class ClockTest {
      * 测试
      */
     static void test() {
-        System.out.println(Clock.now());
-        System.out.println(Clock.date());
-        System.out.println(Clock.timestamp());
-        // 1614583563907
-        // Mon Mar 01 15:26:03 CST 2021
-        // 2021-03-01 15:26:03.973
+        System.out.println("现在时间戳为：" + Clock.now());
+        System.out.println("现在Date为：" + Clock.date());
+        System.out.println("现在Timestamp为：" + Clock.timestamp());
+        // 现在时间戳为：1614583563907
+        // 现在Date为：Mon Mar 01 15:26:03 CST 2021
+        // 现在Timestamp为：2021-03-01 15:26:03.973
     }
 
     /**

@@ -7,14 +7,14 @@
   <artifactId>clock-test</artifactId>
   <version>1.0.0</version>
 
-  <name>ClockTest</name>
-  <description>High performance clock test</description>
+  <name>Clock Test</name>
+  <description>High performance clock test 高性能时钟测试</description>
   <url>https://github.com/ALI1416/clock-test</url>
 
   <properties>
-    <jdk>1.8</jdk>
-    <maven.compiler.source>${jdk}</maven.compiler.source>
-    <maven.compiler.target>${jdk}</maven.compiler.target>
+    <jdk.version>1.8</jdk.version>
+    <maven.compiler.source>${jdk.version}</maven.compiler.source>
+    <maven.compiler.target>${jdk.version}</maven.compiler.target>
     <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
