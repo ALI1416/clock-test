@@ -16,10 +16,10 @@ public class ClockTest {
 
     public static void main(String[] args) {
         test();
-        compare100w();
-        compare1000w();
-        compare1e();
-        compare21e();
+        // compare100w();
+        // compare1000w();
+        // compare1e();
+        // compare21e();
     }
 
     /**
